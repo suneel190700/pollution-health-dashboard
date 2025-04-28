@@ -506,4 +506,5 @@ d3.csv(dataUrl).then(function (data) {
       ],
     },
   ).then(function () {
-    Plotly.addFrames('pollutionBubbleTi
+    Plotly.addFrames('pollutionBubbleTimeline',frames);
+  });
