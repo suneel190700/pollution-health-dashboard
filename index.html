@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>
+      Air Pollution and Respiratory Health Dashboard
+    </title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <script src="https://d3js.org/d3.v5.min.js"></script>
+  </head>
+  <body>
+    <h1>Predicting Air Quality and Respiratory Health</h1>
+    <p>
+      Comprehensive interactive visualization project
+      analyzing pollution levels and respiratory health
+      outcomes over time in the U.S. (2000-2020).
+    </p>
+
+    <h2>Dataset Source</h2>
+    <p>
+      <a
+        href="https://raw.githubusercontent.com/suneel190700/datasets/refs/heads/main/individual_pollution_respiratory_records.csv"
+        target="_blank"
+        >View CSV on GitHub</a
+      >
+    </p>
+
+    <div class="dropdown-container">
+      <label for="causeSelect"
+        ><strong>Select Cause of Death:</strong></label
+      >
+      <select id="causeSelect"></select>
+      <label for="pollutantSelect" style="margin-left: 20px"
+        ><strong>Select Pollutant:</strong></label
+      >
+      <select id="pollutantSelect">
+        <option value="NO2 Mean">NO₂ Mean</option>
+        <option value="CO Mean">CO Mean</option>
+        <option value="SO2 Mean">SO₂ Mean</option>
+        <option value="O3 Mean">O₃ Mean</option>
+      </select>
+    </div>
+
+    <!-- Chart Containers -->
+    <div class="chart-container">
+      <h2>Animated Scatter Plot</h2>
+      <div id="scatterPlot"></div>
+    </div>
+    <div class="chart-container">
+      <h2>Multi-Line Death Trend</h2>
+      <div id="lineChart"></div>
+    </div>
+    <div class="chart-container">
+      <h2>Bubble Chart: Pollution vs Death Rate</h2>
+      <div id="bubbleChart"></div>
+    </div>
+    <div class="chart-container">
+      <h2>Pollution Trends Over Time</h2>
+      <div id="pollutionLineChart"></div>
+    </div>
+    <div class="chart-container">
+      <h2>Death Rate by Cause (2010)</h2>
+      <div id="causeBarChart"></div>
+    </div>
+    <div class="chart-container">
+      <h2>Pollution Composition Pie Chart</h2>
+      <div id="pollutionPieChart"></div>
+    </div>
+    <div class="chart-container">
+      <h2>Death Rate Heatmap (Year vs Cause)</h2>
+      <div id="deathHeatmap"></div>
+    </div>
+    <div class="chart-container">
+      <h2>Pollution Timeline Bubble Animation</h2>
+      <div id="pollutionBubbleTimeline"></div>
+    </div>
+    <div class="chart-container">
+      <h2>Rolling Average Death Rates</h2>
+      <div id="rollingAverageChart"></div>
+    </div>
+    <div class="chart-container">
+      <h2>Grouped Bar Chart: Pollution Levels</h2>
+      <div id="groupedBarChart"></div>
+    </div>
+    <div class="chart-container">
+      <h2>Radar Chart: Pollution Composition</h2>
+      <div id="radarChart"></div>
+    </div>
+
+    <div class="chart-container">
+      <h2>Explore Full Power BI Dashboard</h2>
+      <a
+        href="https://app.powerbi.com/links/MG7_2us9Pt?ctid=70de1992-07c6-480f-a318-a1afcba03983&pbi_source=linkShare"
+        target="_blank"
+      >
+        <button>Open Power BI Dashboard</button>
+      </a>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</
